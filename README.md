@@ -1,1 +1,1 @@
-# BQE Angular WebAPP served as Github Pages
+# BQE Angular WebAPP served as Github Page
