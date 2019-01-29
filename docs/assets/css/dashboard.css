@@ -1,0 +1,101 @@
+.fsc-developerHeader-nav {
+    flex: none ;
+    margin-left: 5px;
+}
+
+.fsc-developerHeader-nav .btn:after {
+  font-family: FontAwesome;
+  content: "\f054";
+  margin-left: 5px;
+}
+
+.home-text-wrap {
+    max-width: None !important;
+
+}
+
+.fsc-developerHeader.slim {
+    background: white !important;
+    border-bottom: 1px solid #daded3;
+}
+
+.fsc-developerHeader {
+    background: none !important;
+}
+
+.modal-backdrop.show {
+    background-color: #f9f9f9;
+    z-index: -1 !important;
+}
+
+.modal-header .close {
+    margin: 0px;
+}
+
+.modal-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 800px !important;
+    }
+}
+
+.sample_cust {
+    background: white;
+    width: 100%;
+}
+
+.toggle_cust {
+    color: white;
+    background: #9a9a9a;
+    font-weight: bold;
+}
+
+.hoverclass{
+    background-color:#444b5d !important;
+}
+
+.toggle_cust:hover{
+    opacity: 0.8;
+    color: white;
+}
+
+.bqe_label {
+    color: white;
+    margin-top: 31px;
+}
+
+.div_new {
+    background-color: #3c8dbc;
+}
+.fa-show{
+    display: none;
+    padding:2px;
+}
+
+.nav-menu .sidebarItem{
+    cursor: pointer !important;
+}
+
+
+/* startup guide */
+
+/* .startupguide-page img {
+    border: 2px solid black;
+} */
+
+.startupguide-page img {
+  margin-left: -15px;
+}
+.startupguide-page .img {
+  max-width: 700px;
+  max-height: 600px;
+  width: 100%;
+}
+
+.startupguide-page ul > li {
+    line-height: 30px;
+}

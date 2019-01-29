@@ -1,0 +1,27 @@
+.docsapi-page {
+  #scroll-to-top {
+    position: fixed;
+    right: 20px;
+    display: block;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    background: rgba(91, 97, 115, 0.4);
+    box-shadow: 0 0 3px lightgrey;
+    cursor: pointer;
+    outline: none;
+  }
+  .sample-response {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  table {
+    margin-bottom: 20px;
+  }
+  .endpoint-description {
+    margin-bottom: 20px;
+  }
+}
