@@ -1,0 +1,383 @@
+﻿.field-area {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 0;
+    letter-spacing: -1px;
+    padding: 5px 0;
+    display: flex;
+    display: -webkit-flex;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+}
+
+.field-label {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    max-width: 120px;
+    font-size: 0.95rem;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    color: #6a6e73;
+    text-transform: uppercase;
+    margin-right: 20px;
+    letter-spacing: 0.5px;
+}
+
+.field-value-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    vertical-align: top;
+    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.flex-columnwise,
+.flex-rowwise {
+    position: relative;
+    width: auto;
+    height: auto;
+    letter-spacing: -1px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+}
+
+.flex-columnwise {
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.flex-rowwise {
+    flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.ellipse {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.margin-top-30 {
+    margin-top: 30px !important;
+}
+
+.margin-top-50 {
+    margin-top: 50px !important;
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+.admin-page-content {
+    height: 100%;
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.model-name-block, .field-area-block {
+    width: 600px;
+    margin: 0 0 20px 0;
+}
+
+.width-600 {
+    width: 600px;
+}
+
+.width-800 {
+    width: 800px;
+}
+
+.width-1000 {
+    width: 1000px;
+}
+
+table,
+.table-create-model,
+.table-list-models {
+    width: 100%;
+}
+
+    table th,
+    table td {
+        padding: 15px;
+    }
+
+    table td {
+        vertical-align: middle;
+        font-style: normal !important;
+        line-height: 22px;
+        font-weight: 500;
+        color: #5a5959;
+    }
+
+    .table-list-models tbody tr:hover,
+    .table-list-apis tbody tr:hover {
+        background-color: #f0f9ff;
+    }
+
+.page-header {
+    margin: 15px 0 45px 0;
+}
+
+.page-title {
+    margin: 0 0 10px 0;
+}
+
+.page-short-description {
+    color: #423333;
+}
+
+.button {
+    padding: 10px 20px;
+    color: #FFF;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
+    font-weight: normal;
+    line-height: initial;
+    font-weight: 500;
+}
+
+.button-primary {
+    background-color: #00a3ff;
+}
+
+    .button-primary:hover {
+        background-color: #1a81bb;
+    }
+
+.button-secondary {
+    background-color: #a5a8ac;
+}
+
+    .button-secondary:hover {
+        background-color: #c7cace;
+    }
+
+.button-section > button {
+    margin-left: 5px;
+}
+
+.btn-link {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #daded3;
+    border-radius: 50%;
+    background-color: #FFF;
+    color: #00a3ff;
+    outline: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+    .btn-link, .btn-link:focus, .btn-link:hover {
+        outline: none;
+        border: 1px solid #daded3;
+    }
+
+
+.btn-add {
+    border: 1px solid #daded3;
+    color: #00a3ff;
+}
+
+    .btn-add:hover {
+        background-color: #00a3ff;
+        color: #FFF;
+    }
+
+.btn-remove {
+    border: 1px solid #E91E63;
+    color: #E91E63;
+    margin-left: 5px;
+}
+
+    .btn-remove:hover {
+        background-color: #E91E63;
+        color: #FFF;
+    }
+
+.btn-link .fa {
+    font-size: 1.2rem;
+}
+
+.btn-edit, .btn-delete {
+    color: #00a3ff;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-section {
+    width: 100%;
+    text-align: right;
+    margin-top: 40px;
+}
+
+.btn-cross {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid #9e9e9e;
+    color: #9e9e9e;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+    .btn-cross:focus, .btn-cross:hover {
+        outline: none;
+        color: #FFF;
+        background-color: #9e9e9e;
+    }
+
+
+.icon-button {
+    background-color: transparent;
+    color: #00a3ff;
+    text-transform: none;
+    padding: 0;
+}
+
+    .icon-button .fa {
+        margin-right: 10px;
+    }
+
+
+
+/******Bootstarp Tabs*****/
+.tab-content.card {
+    padding: 30px 20px;
+}
+
+.nav-tabs {
+    border: none;
+    margin-top: 50px;
+}
+
+.nav-link {
+    padding: 12px 20px;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -4px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    background-color: #FFF;
+    color: inherit;
+}
+
+.tab-pane h5 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 50px 0 10px 0;
+}
+
+
+
+
+
+
+/*::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-button {
+  width: 15px;
+  height: 15px;
+}*/
+
+/*.scrollable-section ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+}
+
+.scrollable-section ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    border: 2px solid #fff;
+    background-color: #daded3;
+}*/
+
+.nav-tabs-wrapper {
+    /*overflow-x: auto;
+    overflow-y: hidden;*/
+    width: 1000px;
+    overflow: hidden;
+}
+
+.nav-tabs {
+    border: none;
+    margin-top: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    left: 0;
+}
+
+    .nav-tabs .nav-link {
+        padding: 12px 20px;
+        white-space: nowrap;
+        border-color: #dee2e6 #dee2e6 #fff;
+        margin: 0 5px 0 0;
+    }
+
+.scroll-left,
+.scroll-right {
+    display: none;
+    padding: 8px;
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
+
+    .scroll-left:hover,
+    .scroll-right:hover {
+        background-color: #cecece;
+    }
+
+    .scroll-left .fa,
+    .scroll-right .fa {
+        font-size: 1.5rem;
+        color: #848484;
+    }

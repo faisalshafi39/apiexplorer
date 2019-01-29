@@ -1,0 +1,128 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 14px / 1.4 $text-font-stack;
+  padding: 0;
+  letter-spacing: 0;
+  margin: 0;
+  height: 100%;
+  font-weight: 500;
+  background-color: white;
+}
+
+
+label {
+  display: inline;
+  font-weight: normal;
+}
+
+li {
+  line-height: normal;
+}
+
+input {
+  font-family: $text-font-stack;
+  color: #00113d;
+  outline: none;
+}
+
+.nav > li > a {
+  display: inline-block;
+}
+
+hr {
+  color: #c7cdcf;
+  margin: 40px 0;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-stack;
+  color: $heading-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 42px * $golden-ratio;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 36px * $golden-ratio;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+
+h3 {
+  font-size: 30px;
+  line-height: 30px * $golden-ratio;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 24px * $golden-ratio;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 20px * $golden-ratio;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 16px * $golden-ratio;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+p {
+  line-height: 30px;
+  color: $text-color;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  padding-left: 15px;
+}
+
+li {
+  color: $text-color;
+}
+
+
+table {
+  td {
+    border-left: 1px solid #daded3;
+  }
+}
