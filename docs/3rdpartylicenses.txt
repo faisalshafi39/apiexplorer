@@ -1448,10 +1448,10 @@ Apache-2.0
  
 
 
-@angular/http
+@angular/forms
 MIT
 
-@angular/forms
+@angular/http
 MIT
 
 core-js

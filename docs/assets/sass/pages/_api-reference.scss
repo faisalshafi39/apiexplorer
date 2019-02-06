@@ -1,6 +1,7 @@
 .api-reference-page {
   overflow: hidden;
 
+
   table {
     td {
       border-left: 0;
@@ -288,6 +289,66 @@
     background-color: #2f3547;
     color: #fff;
     box-shadow: 0 0 10px 0px #040404;
+    z-index: 1000;
     cursor: pointer;
   }
+
+  .base-url:hover{
+    cursor: pointer;
+    color:#2e3547;
+  }
+
+  .mat-elevation-z5 {
+    position: relative;
+  }
+    // Endpoints Navigation bar as fixed top
+  .sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+    display: flex;
+    cursor: pointer;
+    padding-left: -45px !important;
+  }
+
+  .sticky > .api-endpoints-list{
+    padding: 0;
+    width:100%;
+    box-shadow: 0 0 17px -2px grey;
+  }
+
+  .sticky > .api-endpoints-list> ul{
+    flex-direction: row;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+
+  .sticky > .api-endpoints-list> ul > li{
+    padding: 12px;
+    margin-left: 65px;
+    text-align: center;
+  }
+  .active {
+    background-color: #fffffe;
+  }
+  .marginSticky{
+    margin-bottom:40px;
+  }
+
+  /*Large devices (desktops, 992px and up)*/
+  @media (max-width: 768px) and  (max-width: 992px) {
+    .sticky > .api-endpoints-list> ul{
+      flex-direction:column;
+    }
+    .sticky > .api-endpoints-list> ul > li{
+      text-align: left;
+      margin-left:10px;
+    }
+    .sticky_custom > .api-languages-nav{
+      display: none;
+    }
+  }
+
 }
