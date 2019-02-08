@@ -303,48 +303,79 @@
   }
     // Endpoints Navigation bar as fixed top
   .sticky {
-    position: fixed;
-    top: 0px;
+    position: absolute;
     width: 100%;
     z-index: 1001;
     display: flex;
+    margin:0;
+    padding: 0;
     cursor: pointer;
-    padding-left: -45px !important;
   }
 
   .sticky > .api-endpoints-list{
     padding: 0;
-    width:100%;
+    margin:0;
+    width: 100%;
     box-shadow: 0 0 17px -2px grey;
   }
 
   .sticky > .api-endpoints-list> ul{
     flex-direction: row;
     overflow: hidden;
+    margin:0;
+    padding: 0;
+    width: 100%;
     border: 1px solid #e7e7e7;
     background-color: #f3f3f3;
   }
 
   .sticky > .api-endpoints-list> ul > li{
     padding: 12px;
-    margin-left: 65px;
+    margin-left: 50px;
     text-align: center;
   }
   .active {
     background-color: #fffffe;
   }
   .marginSticky{
-    margin-bottom:40px;
+
+    margin-left:-45px;
+  }
+  .mobile-nav-endpoint-icon {
+    display: block;
+    padding-right: 20px;
+    color: #ffffff;
+    font-size: 30px;
+    background:#efefef;
+    width:100%
+  }
+
+  #mobile-endpoint{
+    display: none;
+    text-align: center;
+    color:#2e3547;
+     width:100%;
+    margin-top: -93px;
+  }
+  #mobile-endpoint-close{
+
+    display: none;
+    text-align: center;
+    color:#2e3547;
   }
 
   /*Large devices (desktops, 992px and up)*/
   @media (max-width: 768px) and  (max-width: 992px) {
+    #mobile-endpoint{
+      display: block;
+    }
     .sticky > .api-endpoints-list> ul{
       flex-direction:column;
+      margin-top: -90px;
+      display: none;
     }
     .sticky > .api-endpoints-list> ul > li{
       text-align: left;
-      margin-left:10px;
     }
     .sticky_custom > .api-languages-nav{
       display: none;
