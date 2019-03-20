@@ -1,0 +1,26 @@
+.headers-page{
+  .nav-custom{
+    border:0px solid red;
+    width:100%;
+    height:40px;
+    background: #2e3547 !important;
+    position: fixed;
+    z-index: 99999;
+    margin-top:0px !important;
+  }
+
+  .nav-link{
+    color:white !important;
+  }
+  .nav-item >.active{
+
+   background:none !important;
+  }
+  .nav-item{
+    padding-left:10px
+  }
+  .navbar-nav{
+   // margin-left: 269px;
+  }
+
+}

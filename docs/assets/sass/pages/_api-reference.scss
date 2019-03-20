@@ -11,6 +11,7 @@
   &.page-content {
     padding-top: 0;
     padding-left: 30px;
+    margin-top: 39px;
   }
 
   .api-endpoints {
@@ -380,6 +381,25 @@
     .sticky_custom > .api-languages-nav{
       display: none;
     }
+  }
+  .btn-animated {
+    cursor: pointer;
+    width: 111px;
+    border-radius: 25px;
+    background-color: #52a7ff;
+    color: white;
+    padding: 3px;
+    font-size: 15px;
+  }
+  .btn-animated a {
+    color:white;
+  }
+  .btn-animated:hover{
+    background-color:#18a2b8;
+
+  }
+  .btn-animated:hover a{
+    color:white;
   }
 
 }
