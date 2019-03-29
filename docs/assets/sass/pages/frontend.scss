@@ -1,0 +1,17 @@
+.front-end-page {
+    .modal-dialog{
+      overflow-y: initial !important
+  }
+  .modal-body{
+      height: auto;
+      max-height: 600px;
+      overflow-y: auto;
+  }
+  #search_modal{
+    width: 1000px;
+    margin-top: 71px;
+  }
+  #searchedPage{
+    display: none;
+  }
+}
