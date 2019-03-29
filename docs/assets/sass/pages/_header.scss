@@ -1,15 +1,96 @@
+.flex-columnwise, .flex-rowwise {
+  position: relative;
+  width: auto;
+  height: auto;
+  letter-spacing: -1px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.flex-columnwise {
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.flex-rowwise {
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+.grow-flex {
+  width: auto;
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+.remove-padding {
+  padding: 0 !important;
+}
+
 .headers-page {
+
+  .header-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin-right: auto !important;
+  }
+
   .nav-custom {
     border: none;
     width: 100%;
     height: 70px;
-    /*background: #2e3547 !important;*/
     background: #FFF !important;
     position: fixed;
     z-index: 99999;
     margin-top: 0px !important;
     box-shadow: 1px 1px 2px 1px #ececec;
     border-bottom: 1px solid #daded3;
+    padding: .5rem 1rem;
+  }
+
+  .header-nav .nav-item {
+    margin: 0 40px 0 0;
+    position: relative;
+  }
+
+  .sub-menu-wrapper {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 15px 0 0 0;
+    margin: 0;
+    font-size: 14px;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+  }
+
+  .sub-menu-wrapper .sub-menu {
+    border-radius: .25rem;
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+  }
+
+  .nav-item:hover .sub-menu-wrapper {
+    display: block;
   }
 
   .nav-link {
@@ -17,16 +98,59 @@
     text-transform: uppercase;
     font-weight: 600;
     padding: 0 !important;
-    margin: 0 40px 0 0;
     white-space: nowrap;
     letter-spacing: 0.5px;
   }
+
+  .nav-link.dropdown-toggle::after {
+    content: none;
+  }
+
+  .nav-item:hover > .nav-link {
+    color: #f35406 !important;
+  }
+
+  .header-nav .nav-item:before {
+    background: #f35406 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    right: 0;
+    top: -25px;
+    transition: all .3s ease-in-out;
+    width: 0;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    bottom: auto;
+  }
+
+  .nav-item:hover:before {
+    width: 100%;
+    transition: all .3s ease-in-out;
+  }
+  /*.nav-item:last-child .nav-link {
+    margin-right: 0;
+  }*/
+  .dropdown-heading {
+    padding: 8px 15px;
+    background-color: #ececec;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    cursor: default;
+    border-bottom: 1px solid #daded3;
+  }
+
+
 
   .dropdown-item {
     color: #2e4379 !important;
     padding: 10px 15px;
     font-size: 14px;
     font-weight: 600;
+    letter-spacing: 0.5px;
   }
 
   .nav-item > .active, .dropdown-item:active {
@@ -48,6 +172,10 @@
 
   .dropdown-item .fa-rss {
     color: #F79B00;
+  }
+
+  .dropdown-item .fa-youtube {
+    color: #FE0000;
   }
 
   .dropdown-divider {
@@ -82,11 +210,12 @@
     border-radius: 7px;
   }
 
-  .fa-search {
+  .header-search .fa-search {
     position: absolute;
-    right: 25px;
+    right: 15px;
     font-size: 20px;
     color: #756f6f;
+    cursor: pointer;
   }
 
   .dropdown-menu {
@@ -100,6 +229,15 @@
     padding: 10px 15px;
   }
 
+  .sub-menu-wrapper:not(.has-no-headings) .dropdown-item {
+    padding: 10px 25px;
+  }
+
+  .contact-us-wrapper {
+    position: relative;
+    padding: 0;
+  }
+
   .contact-us-block .dropdown-toggle {
     display: flex;
     display: -webkit-flex;
@@ -107,20 +245,21 @@
     -webkit-align-items: center;
     background-color: #40ad40;
     padding: 15px;
-    height: 50px;
+    height: 40px;
     border-radius: 5px;
     color: #FFF;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 10px;
   }
 
   .contact-us-block .dropdown-toggle span {
     padding: 0 5px 0 10px;
     white-space: nowrap;
+    letter-spacing: 0.2px;
   }
 
   .contact-us-block .dropdown-toggle .fa-comments {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .contact-us-block .dropdown-menu::before {
@@ -146,6 +285,7 @@
     right: 0;
     left: unset;
     top: 59px;
+    position: absolute;
   }
 
   .contact-us-block .dropdown-item {
@@ -186,5 +326,89 @@
 
   .contact-details li:hover, .contact-details a:hover {
     color: #3659b3;
+  }
+
+  .search-wrapper {
+    position: relative;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-search-icon {
+    display: none;
+  }
+  // Small devices (landscape phones, 576px and up)
+  /*@media (max-width: 576px) {
+    .contact-us-block .dropdown-toggle span {
+      display: none;
+    }
+  }*/
+  // Medium devices (tablets, 768px and up)
+  @media (max-width: 768px) {
+    .contact-us-block .dropdown-toggle {
+      padding: 10px;
+      height: 50px;
+    }
+
+    .is-mobile {
+      right: 55px;
+    }
+
+    .dropdown-toggle::after {
+      content: none;
+    }
+
+    .contact-us-block .dropdown-toggle span {
+      display: none;
+    }
+
+    .mobile-search-icon {
+      display: block;
+      font-size: 30px;
+      background-color: #ececec;
+      padding: 10px;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      border-radius: 5px;
+      color: #5f5c5c;
+      margin-left: auto;
+    }
+
+    .header-search-wrapper {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #daded3;
+      padding: 10px;
+    }
+
+    .search-wrapper:hover .header-search-wrapper {
+      display: block;
+      position: absolute;
+      right: -100px;
+      background-color: #ececec;
+      padding: 0px 10px;
+      width: 300px;
+    }
+
+    .header-search .form-control .contact-us-block .dropdown-menu {
+      height: 40px;
+    }
+  }
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .desktop-only {
+      display: flex;
+    }
+
+    .contact-us-block .dropdown-toggle span {
+      display: block;
+    }
+  }
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
   }
 }

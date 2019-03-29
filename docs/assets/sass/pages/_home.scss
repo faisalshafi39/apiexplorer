@@ -23,8 +23,8 @@
   overflow-y: scroll;
   z-index: 2;
   background: rgb(46,53,71);
-  overflow-x: hidden;
-  height: 100vh;
+  /*overflow-x: hidden;*/
+  height: calc(100vh - 70px);
   margin-top: 70px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .logo-block {
-  margin: 10px 6% 10px 0;
+  margin: 0 3% 0 0;
   text-align: center;
 }
 
@@ -58,6 +58,7 @@
   /* max-width: 1200px; */
   min-width: 700px;
   line-height: 28px;
+  margin-top: 70px;
 }
 
 article img {
@@ -541,7 +542,7 @@ code.highlighter-rouge {
   }
 
   .logo-block {
-    margin: 14px 20px;
+    margin: 0;
   }
 
   .mobile-nav-menu-icon {
@@ -569,9 +570,23 @@ code.highlighter-rouge {
   }
 
   .left-side-nav {
-    width: 100%;
-    position: relative;
-    height: auto;
+    position: fixed;
+    z-index: 99999;
+    min-width: 45px;
+    width: 40px;
+    overflow: inherit;
+    right: 0px;
+    margin-left: auto;
+    padding: 3px 10px 3px 10px;
+    height: 50px;
+    margin: 12px 15px 12px 15px;
+    border-radius: 5px;
+    top: -2px;
+  }
+
+
+  .sidebar {
+    margin: 0;
   }
 
   .page-content-wrapper {
