@@ -327,7 +327,7 @@
     padding: 0;
     //width: 50%;
     border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+    background-color: #2f3547;
     margin-top:7px;
     border-radius: 50px 20px;
     box-shadow: 1px 1px darkkhaki;
@@ -350,12 +350,13 @@
     padding: 12px;
     //margin-left: 50px;
     text-align: left;
+    color:white !important;
   }
   .active{
     background-color: #fffffe;
   }
-  .activated {
-    color: #f35407cc !important;
+  .sticky > .api-endpoints-list> ul > .activated {
+    font-weight: 700;
   }
   .marginSticky{
 
@@ -387,7 +388,7 @@
     color:#2e3547;
   }
   .fontcust{
-    color:#2f3547;
+    color:white;
   }
 
   /*Large devices (desktops, 992px and up)*/
