@@ -32,6 +32,7 @@
 @import
   'pages/frontend',
   'pages/header',
+  'pages/footer',
   'pages/home',
   'pages/overview',
   'pages/docsapi',
@@ -44,7 +45,9 @@
   'pages/filters',
   'pages/oauth2implicit',
   'pages/oauth2native',
-  'pages/openid';
+  'pages/openid',
+  'pages/support-header',
+  'pages/support-faq';
 
 // 7. Themes
 @import

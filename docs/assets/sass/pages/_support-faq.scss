@@ -1,0 +1,146 @@
+.page-faq{
+  .slider{
+    height: 400px;
+    padding-top: 125px;
+    background-image: url(https://www.bqe.com/bqe-assets/images/banners/core/help.jpg);
+    margin-top: 0px;
+  }
+  .slider  .core-intro-text__wrapper {
+    height: 275px;
+    display: table;
+    width: 100%;
+}
+.slider .intro-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+.slider .core-intro-text__wrapper .intro-text h1 {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 300;
+    color: #4a4a4a;
+    margin: 0 0 20px 0;
+    max-width: 600px;
+}
+.slider .core-intro-text__wrapper .intro-text h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    margin: 0 0 23px;
+    max-width: 600px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.main-content{
+  height:auto;
+  padding:20px;
+}
+
+.align_text{
+  text-align:center;
+  padding:30px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  height: auto;
+  padding: 47px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+i.fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+  font-size:45px;
+  color:#4594f6
+
+}
+.header-search {
+    position: relative;
+    padding: 0;
+  }
+
+  .header-search .form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+  }
+
+  .header-search .fa-search {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    color: #756f6f;
+    cursor: pointer;
+    border-radius: none;
+    box-shadow: none;
+  }
+  .desktop-only{
+    display: flex !important;
+    list-style-type: none !important;
+    margin-top: -18px;
+  }
+
+.nav-item > .active, .dropdown-item:active {
+    background: none !important;
+    color: #f35406 !important;
+  }
+  li .active {
+    border-top: 1px solid orange;
+  }
+  .information-section{
+    border-bottom: 1px solid #dcdcdc;
+    height:auto;
+  }
+  .para_align{
+    line-height:1px;
+    margin-top:32px
+  }
+  .para_x{
+    line-height:23px;
+  }
+  .rotate-icon{
+    font-size:20px !important;
+  }
+  .row {
+     margin-right:0px !important;
+  }
+  @media (max-width: 768px) {
+    .column {
+      width: 100%;
+    }
+  }
+}

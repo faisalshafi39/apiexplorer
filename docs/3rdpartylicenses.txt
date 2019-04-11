@@ -1242,6 +1242,9 @@ MIT
 @angular/router
 MIT
 
+@angular/forms
+MIT
+
 rxjs-compat
 Apache-2.0
                                Apache License
@@ -1447,9 +1450,6 @@ Apache-2.0
  limitations under the License.
  
 
-
-@angular/forms
-MIT
 
 @angular/http
 MIT
