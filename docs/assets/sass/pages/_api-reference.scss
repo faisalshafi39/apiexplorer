@@ -331,20 +331,13 @@
     margin-top:7px;
     border-radius: 50px 20px;
     box-shadow: 1px 1px darkkhaki;
-    animation-duration: 3s;
-    animation-name: slidein;
+    -webkit-animation: expand .2s;
   }
-  @keyframes slidein {
-    from {
-      margin-top: 20%;
-      width: 100%;
-    }
+  @-webkit-keyframes expand{
+    0%{height:0px}
+    100%{height:50px}
+}
 
-    to {
-      margin-bottom: 0%;
-      width: 100%;
-    }
-  }
 
   .sticky > .api-endpoints-list> ul > li{
     padding: 12px;
