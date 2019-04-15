@@ -6,6 +6,10 @@
       border-left: 0;
     }
   }
+  .urllink{
+    cursor: pointer;
+    color:#1F73B7 !important;
+  }
 
   &.page-content {
     padding-top: 0;
@@ -79,6 +83,9 @@
       p {
         margin: 0;
       }
+      ul li{
+        line-height: 30px;
+      }
     }
     .api-endpoints-list {
       padding: 15px 0;
@@ -109,7 +116,7 @@
         border-radius: 5px;
         font-size: 14px;
         background-color: transparent;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         cursor: pointer;
         &.active {
           background-color: lightgrey;

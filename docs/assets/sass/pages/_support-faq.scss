@@ -143,4 +143,16 @@ i.fa {
       width: 100%;
     }
   }
+  #expandToggle{
+    cursor: pointer;
+    color:#1F73B7;
+  }
+  .loadingicon{
+    box-shadow: none !important;
+    font-size: 24px !important;
+    margin-top: -20px;
+  }
+  .pull-center{
+    text-align: center;
+  }
 }
