@@ -132,7 +132,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
    top: .3em;
    right: .2em;
    transition: opacity 0.3s ease-in-out;
-   opacity: 0;
+   opacity: 1;
  }
 
  div.code-toolbar:hover > .toolbar {
