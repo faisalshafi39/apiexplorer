@@ -32,5 +32,26 @@
    }
    .row{
      margin-top:45px;
+     margin-left: 0px;
+     margin-right: 0px;
+   }
+   @media screen and (max-width: 768px) {
+    li {
+      display: grid !important;
+    }
+    .text-nowrap li {
+      display: inline !important;
+    }
+  }
+}
+#footer_div{
+ padding-left: 300px;
+width: 99.9%;
+position: absolute;
+clear: both;
+}
+@media screen and (max-width: 768px) {
+  #footer_div{
+    padding-left: 0px;
    }
 }
